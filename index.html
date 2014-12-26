@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Shop with Robby</title>
 	<!-- Bootstrap -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/main.css">
@@ -26,39 +26,32 @@
           </button>
           <a class="navbar-brand" href="#">Rob's Shopping List</a>
         </div>
-        <!-- <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse --> -->
       </div>
     </nav>
 
     <div class="container">
-      	<div class="col-md-6 text-center pagesection">
+      	<div class="col-sm-6 text-center pagesection">
 	        <h2>Enter Items Here and Rob will go pick them up for you!</h2>
-	        <form role="form">
+	        <!-- <form role="form"> -->
 	    		<div class="form-group">
 	<!--       			<label for="listentry">Enter a grocery item here</label> -->
-	      			<input type="text" placeholder="Get some pizza" class="form-control" id="listEntryBox">
+	      			<input type="text" placeholder="Get some pizza or somethign already..." class="form-control" id="listEntryBox">
 	   		 	</div>
 	   		 	<div class="buttongroup">
 					<button type="button" class="btn btn-sm btn-success" id="addItemButton">
-					  <span class="glyphicon glyphicon-plus"> Add Item</span>
+					  <span class="glyphicon glyphicon-plus"> Add</span>
 					</button> 
 					<button type="button" class="btn btn-sm btn-danger" id="clearAllButton">
-					  <span class="glyphicon glyphicon-trash"> Clear List</span>
+					  <span class="glyphicon glyphicon-trash"> Clear</span>
 					</button> 
-					<button type="button" class="btn btn-sm btn-info" id="shop">
-					  <span class="glyphicon glyphicon-shopping-cart"> Let's Go Shopping</span>
+					<button type="button" class="btn btn-sm btn-info" id="shopButton">
+					  <span class="glyphicon glyphicon-shopping-cart"> Shop</span>
 					</button>
 				</div>  
  		</div>
-      	<div class="col-md-6 text-center pagesection">
-	        <h2 class="itemslisted">Nothing to buy...take a load off!</h2>
-	        <h3>My List</h3>
+      	<div class="col-sm-6 text-center pagesection">
+	        <h2 id="itemslistedHeadingText">Nothing to buy...take a load off!</h2>
+	        <h3 id="myListHeading">My List</h3>
 	        <ul class="list-group" id="grocerylist"> 
 			  <li class="list-group-item">
         		<input type="checkbox" class="listcheckbox">

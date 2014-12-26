@@ -1,9 +1,15 @@
 $(document).ready(function(){
-	alert("ready set play");
+	alert("ready set shop");
+
+	//hide items on initial page load
+	$("#myListHeading").hide();
+
 
 	//global variables for html tags
 	var lineItemFirstHtml = '<li class="list-group-item"><input type="checkbox" class="listcheckbox"><span class="itemName">'
     var lineItemSecondHtml = '</span><button id="clearItem"><span class="glyphicon glyphicon-remove"></span></button></li>'
+    var textForListHeadingNew = 'Get the car started, time to go shopping!'
+    var textForListHeadingOriginal = 'Nothing to buy...take a load off!'
 
   	console.log(lineItemFirstHtml);
   	console.log(lineItemSecondHtml);		  
@@ -14,7 +20,8 @@ $(document).ready(function(){
   		var boxValue = $("#listEntryBox").val();
   		console.log(boxValue);
   		console.log(boxValue.length);
-  		addToGroceryList(boxValue);	 		
+  		addToGroceryList(boxValue);
+  		$("#itemslistedHeadingText").text(textForListHeadingNew);
   	});
 
   //add item with enter if value
@@ -25,14 +32,27 @@ $(document).ready(function(){
   			console.log(boxValue);
   			console.log(boxValue.length);
   			addToGroceryList(boxValue);
+  			$("#itemslistedHeadingText").text(textForListHeadingNew);
   		}		 		
   	});
 
   //clear all item with trash button click
   $("#clearAllButton").click(function(){
   		console.log("clear item button clicked");
-  		clearGroceryList();	 		
+  		clearGroceryList();	 
+  		$("#itemslistedHeadingText").text(textForListHeadingOriginal);		
   	});
+
+  //shop button - future feature
+  $("#shopButton").click(function(){
+  		console.log("shop button clicked");
+  		alert("come back soon for new shop feature!");	 		
+  	});
+
+  //checkbox styling
+  $('.listcheckbox').click(function () {
+    $(this).parent().toggleClass("purchased");
+  });
 
   function addToGroceryList(value){
   	console.log("grocery list called with:" + value);
@@ -51,6 +71,9 @@ $(document).ready(function(){
   function clearGroceryList(){
   	console.log("clear grocery list called");
   	$("#grocerylist").empty();
+  	$("#listEntryBox").attr("placeholder","You cleared the list - better add something fast!");
+  	$("#listEntryBox").focus();
+  	$("#myListHeading").hide();
   };
 
   //add item with enter click
