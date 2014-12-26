@@ -6,10 +6,12 @@
 	<!-- Bootstrap -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/main.css">
-
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon"  href="list.ico">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/application.js"></script>
 </head>
 <body>
 
@@ -40,13 +42,13 @@
 	        <form role="form">
 	    		<div class="form-group">
 	<!--       			<label for="listentry">Enter a grocery item here</label> -->
-	      			<input type="text" placeholder="Get some pizza" class="form-control" id="listentry">
+	      			<input type="text" placeholder="Get some pizza" class="form-control" id="listEntryBox">
 	   		 	</div>
 	   		 	<div class="buttongroup">
-					<button type="button" class="btn btn-sm btn-success" id="add">
+					<button type="button" class="btn btn-sm btn-success" id="addItemButton">
 					  <span class="glyphicon glyphicon-plus"> Add Item</span>
 					</button> 
-					<button type="button" class="btn btn-sm btn-danger" id="clearAll">
+					<button type="button" class="btn btn-sm btn-danger" id="clearAllButton">
 					  <span class="glyphicon glyphicon-trash"> Clear List</span>
 					</button> 
 					<button type="button" class="btn btn-sm btn-info" id="shop">
@@ -57,9 +59,22 @@
       	<div class="col-md-6 text-center pagesection">
 	        <h2 class="itemslisted">Nothing to buy...take a load off!</h2>
 	        <h3>My List</h3>
-	        <ul class="list-group">
-			  
-			  <li class="list-group-item customdisabled">
+	        <ul class="list-group" id="grocerylist"> 
+			  <li class="list-group-item">
+        		<input type="checkbox" class="listcheckbox">
+        		<span class="itemName">pizza pizza</span>
+  			  	<button id="clearItem">
+				  <span class="glyphicon glyphicon-remove"></span>
+				</button>
+  			  </li>
+  			  <li class="list-group-item">
+        		<input type="checkbox" class="listcheckbox">
+        		<span class="itemName">pizza pizza</span>
+  			  	<button id="clearItem">
+				  <span class="glyphicon glyphicon-remove"></span>
+				</button>
+  			  </li>
+  			  <li class="list-group-item">
         		<input type="checkbox" class="listcheckbox">
         		<span class="itemName">pizza pizza</span>
   			  	<button id="clearItem">

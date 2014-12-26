@@ -1,0 +1,19 @@
+Tasks:
+*Add item to list
+	-on clicking button
+	-on enter
+	-clear or reset input box when run enter or click button
+*clear all items from list
+*Checkbox behavior
+	-color li red or green and cross off the item
+*remove item from li
+
+
+Optoinal:
+*Let's go shopping button
+	-implementation ?
+
+*three states off 2nd column header
+	-empty list
+	-pending items
+	-all items done
