@@ -1,0 +1,44 @@
+.header {
+	height: 50px;
+	background-color: cyan;
+}
+
+.headertitle {
+	
+}
+
+li {
+	text-align: left;
+}
+
+.listitemclear{
+	float: right;
+}
+
+.pagesection{
+	border-color: tan;
+	border-width: 2px;
+	border-style: dashed;
+}
+.whiteout {
+	background-color: white;
+}
+
+.buttongroup {
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+/*div {
+	border-color: red;
+	border-width: 1px;
+	border-style: solid;
+}*/
+
+/** {
+  outline: red 1px solid;
+}*/
+
+body {
+  padding-top: 50px;
+}

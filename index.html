@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rob's Shopping List</a>
+        </div>
+        <!-- <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse --> -->
+      </div>
+    </nav>
+
+    <div class="container">
+      	<div class="col-md-6 text-center pagesection">
+	        <h2>Enter Items Here and Rob will go pick them up for you!</h2>
+	        <form role="form">
+	    		<div class="form-group">
+	<!--       			<label for="listentry">Enter a grocery item here</label> -->
+	      			<input type="text" placeholder="Get some pizza" class="form-control" id="listentry">
+	   		 	</div>
+	   		 	<div class="buttongroup">
+					<button type="button" class="btn btn-sm btn-success" id="add">
+					  <span class="glyphicon glyphicon-plus"> Add Item</span>
+					</button> 
+					<button type="button" class="btn btn-sm btn-danger" id="clear">
+					  <span class="glyphicon glyphicon-trash"> Clear List</span>
+					</button> 
+					<button type="button" class="btn btn-sm btn-info" id="shop">
+					  <span class="glyphicon glyphicon-shopping-cart"> Let's Go Shopping</span>
+					</button>
+				</div>  
+ 		</div>
+      	<div class="col-md-6 text-center pagesection">
+	        <h2 class="itemslisted">Nothing to buy...take a load off!</h2>
+	        <h3>My List</h3>
+	        <ul class="list-group">
+			  <li class="list-group-item">asdasd asdsd<span class="listitemclear">clear button</span></li>
+			  <li class="list-group-item">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">Morbi leo risus</li>
+			  <li class="list-group-item">Porta ac consectetur ac</li>
+			  <li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+
+	        <!-- Change text when something in list. -->
+      	</div>
+
+    </div>
+
+	</body>
+</html>
