@@ -46,7 +46,7 @@
 					<button type="button" class="btn btn-sm btn-success" id="add">
 					  <span class="glyphicon glyphicon-plus"> Add Item</span>
 					</button> 
-					<button type="button" class="btn btn-sm btn-danger" id="clear">
+					<button type="button" class="btn btn-sm btn-danger" id="clearAll">
 					  <span class="glyphicon glyphicon-trash"> Clear List</span>
 					</button> 
 					<button type="button" class="btn btn-sm btn-info" id="shop">
@@ -58,9 +58,16 @@
 	        <h2 class="itemslisted">Nothing to buy...take a load off!</h2>
 	        <h3>My List</h3>
 	        <ul class="list-group">
-			  <li class="list-group-item">asdasd asdsd<span class="listitemclear">clear button</span></li>
+			  
+			  <li class="list-group-item customdisabled">
+        		<input type="checkbox" class="listcheckbox">
+        		<span class="itemName">pizza pizza</span>
+  			  	<button id="clearItem">
+				  <span class="glyphicon glyphicon-remove"></span>
+				</button>
+  			  </li>
 			  <li class="list-group-item">Dapibus ac facilisis in</li>
-			  <li class="list-group-item">Morbi leo risus</li>
+			  <li class="list-group-item customdisabled">Morbi leo risus</li>
 			  <li class="list-group-item">Porta ac consectetur ac</li>
 			  <li class="list-group-item">Vestibulum at eros</li>
 			</ul>
