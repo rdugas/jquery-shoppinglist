@@ -3,7 +3,7 @@ li {
 }
 
 
-#clearItem {
+#clearItemButton {
 	float: right;
 }
 
@@ -23,7 +23,9 @@ li {
 
 #myListHeading {
 	text-align: left;
-	color: tan;
+	color: #31b0d5;
+	display: none; 
+	/*none on page initial load*/
 }
 
 .buttongroup {
@@ -43,7 +45,12 @@ li {
 .list-group-item.purchased {
 	text-decoration: line-through;
 	color: #777;
-  	background-color: lightpink;	
+  	background-color: #5cb85c;	
+}
+
+.footerdiv {
+	padding-top: 50px;
+	text-align: right;
 }
 
 /*div {
